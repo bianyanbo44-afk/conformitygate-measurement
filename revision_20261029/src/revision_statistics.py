@@ -150,6 +150,9 @@ def run():
         for name,change in grid:
             altered=g.copy();altered['conforms']=criterion_labels(g,change)
             perturb.append({'dataset':dataset,'scenario':name,'changed_labels':int((altered.conforms!=g.conforms).sum()),'changed_fraction':(altered.conforms!=g.conforms).mean(),**point(altered)})
+        altered=g.copy()
+        altered['conforms']=((g.slope-1).abs().lt(.35)&g.intercept.abs().lt(5)&g.r2.gt(.70)&(g.rmse.lt(7)|g.nrmse_percent.lt(30))).astype(int)
+        perturb.append({'dataset':dataset,'scenario':'strict_boundary','changed_labels':int((altered.conforms!=g.conforms).sum()),'changed_fraction':(altered.conforms!=g.conforms).mean(),**point(altered)})
         for name,passed in [('slope',(g.slope-1).abs().le(.35)),('intercept',g.intercept.abs().le(5)),('r2',g.r2.ge(.7)),('error',g.rmse.lt(7)|g.nrmse_percent.lt(30))]:
             failures.append({'dataset':dataset,'criterion':name,'candidates':len(g),'failures':int((~passed).sum()),'failure_rate':(~passed).mean()})
     save(pd.DataFrame(perturb),REV/'results/threshold_perturbations.csv');save(pd.DataFrame(failures),REV/'results/criterion_failures.csv');save(pd.DataFrame(site_sensitivity),REV/'results/india_site_cluster_sensitivity.csv')

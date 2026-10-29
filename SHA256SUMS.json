@@ -340,8 +340,8 @@
     "bytes": 285
   },
   "revision_20261029/results/threshold_perturbations.csv": {
-    "sha256": "905c8c05b5f8954ab180dd4ff43b22bd66946ad42359ddb042e4dc2854463371",
-    "bytes": 8643
+    "sha256": "c31b713100dade4aa17fc74a03001d46aef36a3aa77347f727c517293fd4ff3d",
+    "bytes": 9166
   },
   "revision_20261029/results/uncertainty_summary.csv": {
     "sha256": "32dc31ea6b55375025d2ab07a9691c1abeeecfb0ec69ec56ce852dbf0d48b74a",
@@ -380,8 +380,8 @@
     "bytes": 2087
   },
   "revision_20261029/src/revision_statistics.py": {
-    "sha256": "17dee374a74b3aff6081f740a5d49d380dd5dd8d2e37bd9dcc7a125d804d32c6",
-    "bytes": 13855
+    "sha256": "37c135a95a9e46a7fe60488c696aa5bccf45c5a43569600d5046c4d89bc6de6e",
+    "bytes": 14229
   },
   "revision_20261029/src/revision_uncertainty.py": {
     "sha256": "d80cfa9467cc68efd3722e4ffc22f1c8314587915f596d287ae39de15594b549",
