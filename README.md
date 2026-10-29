@@ -62,6 +62,13 @@ contains three site aggregates derived from seven physical PA-II units.
 7. Reproduction and diagnosis of the archived logistic score.
 8. Figure export from saved results, with a portable panel-geometry check.
 
+The figure suite includes five main figures and a supplementary six-panel
+ROC/precision-recall diagnostic. Editable PDF/SVG and 600-dpi PNG/TIFF files
+are accompanied by figure-specific source data. The within-pipeline display
+reports observed-cluster bootstrap intervals and class counts; one-positive-
+cluster strata use open points without an interval. These displays do not
+refit models or change the archived point results.
+
 Cache files are reused for identical inputs. Use a fresh checkout if changing
 raw inputs or the analysis specification. No target label tunes a model,
 feature subset, threshold, or calibration parameter. The full primary score
