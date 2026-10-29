@@ -1,6 +1,6 @@
 # ConformityGate: machine learning for sensor data quality ranking
 
-Code and numerical evidence for *ConformityGate: Machine learning for cross-domain quality ranking of sensor data products* (Measurement, MEAS-D-26-15622).
+Code and numerical evidence for *ConformityGate: Machine learning for cross-domain quality ranking of low-cost PM2.5 sensor data products* (Measurement, MEAS-D-26-15622).
 
 The revision separates sensor-only assessment features from paired-reference
 evaluation. It evaluates candidate ranking and matched deployment policies
@@ -60,9 +60,12 @@ contains three site aggregates derived from seven physical PA-II units.
 6. Reference-blinding invariance, metric/budget checks, and a source-calibrated
    secondary release stress test.
 7. Reproduction and diagnosis of the archived logistic score.
-8. Figure export from saved results, with a portable panel-geometry check.
+8. Second-round analyses: rankings by measured assessment errors (an oracle
+   reference point), a label without the R2 criterion, concentration-spread
+   strata, and a fully rebuilt run with U.S.-level daily completeness.
+9. Figure export from saved results, with a portable panel-geometry check.
 
-The figure suite includes five main figures and a supplementary six-panel
+The figure suite includes seven main figures and a supplementary six-panel
 ROC/precision-recall diagnostic. Editable PDF/SVG and 600-dpi PNG/TIFF files
 are accompanied by figure-specific source data. The within-pipeline display
 reports observed-cluster bootstrap intervals and class counts; one-positive-

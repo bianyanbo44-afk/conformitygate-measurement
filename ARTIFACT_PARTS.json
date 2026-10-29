@@ -64,5 +64,13 @@
       ".artifact_parts/revision_20261029__results__selected_products.csv.gz.000.bin",
       ".artifact_parts/revision_20261029__results__selected_products.csv.gz.001.bin"
     ]
+  },
+  "revision_20261029/results/harmonized/harmonized_scores.csv.gz": {
+    "sha256": "735cd7b993441184cc50b9b919fe325ba857d6306855df809f20c91610b9b39f",
+    "bytes": 1513498,
+    "parts": [
+      ".artifact_parts/revision_20261029__results__harmonized__harmonized_scores.csv.gz.000.bin",
+      ".artifact_parts/revision_20261029__results__harmonized__harmonized_scores.csv.gz.001.bin"
+    ]
   }
 }
