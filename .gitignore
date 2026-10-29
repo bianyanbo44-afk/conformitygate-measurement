@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+data/raw/
+revision_20261029/data/
+revision_20261029/results/cache/
+revision_20261029/results/models/
+*.log
+
+archive/submitted_specification.zip
+data/processed/gate_features.csv.gz
+revision_20261029/results/criterion_uncertainty.csv.gz
+revision_20261029/results/main_external_scores.csv.gz
+revision_20261029/results/main_uk_scores.csv.gz
+revision_20261029/results/selected_products.csv.gz

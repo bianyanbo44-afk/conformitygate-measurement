@@ -1,0 +1,11 @@
+{
+  "assessment_reference_mask_invariance": true,
+  "positive_class_index_verified": true,
+  "daily_calibration": true,
+  "external_training": "UK only",
+  "shrinkage": {
+    "1": 0.25,
+    "3": 0.5,
+    "7": 0.7
+  }
+}

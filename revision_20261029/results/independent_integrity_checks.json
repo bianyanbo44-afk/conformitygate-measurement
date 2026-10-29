@@ -1,0 +1,12 @@
+{
+  "CampmierIndia_all_budget_reference_blinding": true,
+  "EPA_US_24h_all_budget_reference_blinding": true,
+  "QUANT_all_budget_reference_blinding": true,
+  "weighted_auc_matches_sklearn_with_ties": true,
+  "review_budget_averages_boundary_ties": true,
+  "all_shrinkage_offsets_match_formula": true,
+  "reference_fields_excluded_from_predictor_schema": true,
+  "candidate_denominators_match_flow": true,
+  "logistic_positive_class_index_correct": true,
+  "release_threshold_uses_UK_only": true
+}

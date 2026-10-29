@@ -1,0 +1,68 @@
+{
+  "archive/submitted_specification.zip": {
+    "sha256": "07654d5b3a6d8d1f95fba4e17c126ff3fbd3247e0724aaee6fd7ef3bfe5188d3",
+    "bytes": 16824653,
+    "parts": [
+      ".artifact_parts/archive__submitted_specification.zip.000.bin",
+      ".artifact_parts/archive__submitted_specification.zip.001.bin",
+      ".artifact_parts/archive__submitted_specification.zip.002.bin",
+      ".artifact_parts/archive__submitted_specification.zip.003.bin",
+      ".artifact_parts/archive__submitted_specification.zip.004.bin",
+      ".artifact_parts/archive__submitted_specification.zip.005.bin",
+      ".artifact_parts/archive__submitted_specification.zip.006.bin",
+      ".artifact_parts/archive__submitted_specification.zip.007.bin",
+      ".artifact_parts/archive__submitted_specification.zip.008.bin",
+      ".artifact_parts/archive__submitted_specification.zip.009.bin",
+      ".artifact_parts/archive__submitted_specification.zip.010.bin",
+      ".artifact_parts/archive__submitted_specification.zip.011.bin"
+    ]
+  },
+  "data/processed/gate_features.csv.gz": {
+    "sha256": "c719d16f4f1be95d71d5f9d3356038a84af837e843670720d8db475751d1f653",
+    "bytes": 3635781,
+    "parts": [
+      ".artifact_parts/data__processed__gate_features.csv.gz.000.bin",
+      ".artifact_parts/data__processed__gate_features.csv.gz.001.bin",
+      ".artifact_parts/data__processed__gate_features.csv.gz.002.bin"
+    ]
+  },
+  "revision_20261029/results/criterion_uncertainty.csv.gz": {
+    "sha256": "0f3821fd99969a5037416bf3bba5d2e4771746b3d9720b20f12fd181e4ffdbfe",
+    "bytes": 1896243,
+    "parts": [
+      ".artifact_parts/revision_20261029__results__criterion_uncertainty.csv.gz.000.bin",
+      ".artifact_parts/revision_20261029__results__criterion_uncertainty.csv.gz.001.bin"
+    ]
+  },
+  "revision_20261029/results/main_external_scores.csv.gz": {
+    "sha256": "48454ab8cff7380be65c3ce15350cf26afcb1267ee11711037c928a72963e1c0",
+    "bytes": 8508057,
+    "parts": [
+      ".artifact_parts/revision_20261029__results__main_external_scores.csv.gz.000.bin",
+      ".artifact_parts/revision_20261029__results__main_external_scores.csv.gz.001.bin",
+      ".artifact_parts/revision_20261029__results__main_external_scores.csv.gz.002.bin",
+      ".artifact_parts/revision_20261029__results__main_external_scores.csv.gz.003.bin",
+      ".artifact_parts/revision_20261029__results__main_external_scores.csv.gz.004.bin",
+      ".artifact_parts/revision_20261029__results__main_external_scores.csv.gz.005.bin"
+    ]
+  },
+  "revision_20261029/results/main_uk_scores.csv.gz": {
+    "sha256": "b9ebb105bae5903e127760b2c6cbdb5f02a38aed87bb81338d1b7052e1879641",
+    "bytes": 7139941,
+    "parts": [
+      ".artifact_parts/revision_20261029__results__main_uk_scores.csv.gz.000.bin",
+      ".artifact_parts/revision_20261029__results__main_uk_scores.csv.gz.001.bin",
+      ".artifact_parts/revision_20261029__results__main_uk_scores.csv.gz.002.bin",
+      ".artifact_parts/revision_20261029__results__main_uk_scores.csv.gz.003.bin",
+      ".artifact_parts/revision_20261029__results__main_uk_scores.csv.gz.004.bin"
+    ]
+  },
+  "revision_20261029/results/selected_products.csv.gz": {
+    "sha256": "34a756ed6e28c3c8ea4f94a38a36239a76d29ec46e8c13cd99bc878be1b36ee0",
+    "bytes": 1602938,
+    "parts": [
+      ".artifact_parts/revision_20261029__results__selected_products.csv.gz.000.bin",
+      ".artifact_parts/revision_20261029__results__selected_products.csv.gz.001.bin"
+    ]
+  }
+}

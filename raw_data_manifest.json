@@ -1,0 +1,18 @@
+{
+  "data/raw/quant/QUANT_SensorSystems_hourly.csv": {
+    "sha256": "a8fa398aacd7bb5c5c320df6675a8dccb146d4e44d0c6f392b4d5acf76fc4d1f",
+    "bytes": 476864853
+  },
+  "data/raw/quant/QUANT_Reference_hourly.csv": {
+    "sha256": "079a686e4c01193415429bf7a6fde22b6911014af308200d8c2068fac7390585",
+    "bytes": 26658532
+  },
+  "data/raw/india/Campmier_Manuscript_Data.xlsx": {
+    "sha256": "ea0fd6f98597762144e027afd304bd14ce11d512650673e165a3f52115e81fbf",
+    "bytes": 879423
+  },
+  "data/raw/epa_us/Data_DevelopmentUSPAcorrection_210408/Full24hrdataset.csv": {
+    "sha256": "c0027349e693f629596d74fde4900f5318e8556530f58c44c79409aac55ba2c3",
+    "bytes": 6420524
+  }
+}

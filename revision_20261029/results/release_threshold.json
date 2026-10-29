@@ -1,0 +1,25 @@
+{
+  "release": {
+    "threshold": 0.9681292990940021,
+    "coverage": 0.89,
+    "selected_rows": 178,
+    "selected_blocks": 178,
+    "point_risk": 0.02247191011235955,
+    "bootstrap_upper": 0.0449438202247191,
+    "finite_sample_upper": 0.04911530874270673,
+    "upper_bound": 0.04911530874270673,
+    "effective_blocks": 178.0,
+    "feasible": true
+  },
+  "withhold": {
+    "threshold": -Infinity,
+    "coverage": 0.0,
+    "selected_rows": 0,
+    "selected_blocks": 0,
+    "point_risk": NaN,
+    "bootstrap_upper": 1.0,
+    "finite_sample_upper": 1.0,
+    "upper_bound": 1.0,
+    "feasible": false
+  }
+}

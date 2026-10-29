@@ -1,0 +1,5 @@
+dataset,evaluable,blocks,groups,sites,devices,eligible_b0,eligible_b1,eligible_b3,eligible_b7,candidates
+CampmierIndia,True,17,3,3,3,17,15,15,13,618
+EPA_US_24h,True,231,40,40,40,231,221,217,206,9114
+QUANT,False,27,10,3,10,27,27,27,24,1098
+QUANT,True,200,11,3,10,200,198,198,191,8244
