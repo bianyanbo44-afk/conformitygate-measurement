@@ -66,7 +66,11 @@ def run():
     selected['conforms']=selected.conforms.astype(int)
     uk_selected=selected[selected.dataset.eq('QUANT')]
     thresholds=calibrate_decisions(uk_selected.conforms.to_numpy(bool),uk_selected.score.to_numpy(float),uk_selected.block_id.to_numpy(),CONFIG,20261029)
-    (REV/'results/release_threshold.json').write_text(json.dumps(thresholds,indent=2,default=lambda v:float(v)))
+    def finite_json(value):
+        if isinstance(value,dict):return {k:finite_json(v) for k,v in value.items()}
+        if isinstance(value,(float,np.floating)) and not np.isfinite(value):return None
+        return value
+    (REV/'results/release_threshold.json').write_text(json.dumps(finite_json(thresholds),indent=2,allow_nan=False,default=lambda v:float(v)))
     release=[]
     t=thresholds['release'].get('threshold',np.inf)
     for ds,g in selected.groupby('dataset'):

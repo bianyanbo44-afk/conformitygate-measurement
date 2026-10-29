@@ -146,7 +146,7 @@ def run():
           ('joint_tight',{'slope':.30,'intercept':4.5,'r2':.72,'rmse':6.5,'nrmse':27.}),('joint_loose',{'slope':.40,'intercept':5.5,'r2':.68,'rmse':7.5,'nrmse':33.})]
     perturb=[];failures=[];site_sensitivity=[]
     for dataset,g in frame[frame.method.eq('full')].groupby('dataset'):
-        if dataset=='CampmierIndia':site_sensitivity.append({'dataset':dataset,**point(g),**bootstrap(g,True)})
+        if dataset=='CampmierIndia':site_sensitivity.append({'dataset':dataset,**point(g),**bootstrap(g,True),'clusters':int(g.site.nunique()),'resampling_clusters':int(g.site.nunique())})
         for name,change in grid:
             altered=g.copy();altered['conforms']=criterion_labels(g,change)
             perturb.append({'dataset':dataset,'scenario':name,'changed_labels':int((altered.conforms!=g.conforms).sum()),'changed_fraction':(altered.conforms!=g.conforms).mean(),**point(altered)})

@@ -12,11 +12,11 @@
     "feasible": true
   },
   "withhold": {
-    "threshold": -Infinity,
+    "threshold": null,
     "coverage": 0.0,
     "selected_rows": 0,
     "selected_blocks": 0,
-    "point_risk": NaN,
+    "point_risk": null,
     "bootstrap_upper": 1.0,
     "finite_sample_upper": 1.0,
     "upper_bound": 1.0,

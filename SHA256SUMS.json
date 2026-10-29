@@ -260,8 +260,8 @@
     "bytes": 507
   },
   "revision_20261029/results/india_site_cluster_sensitivity.csv": {
-    "sha256": "61602ca7be790e73692630b083001579ea6e0ce1857bce1ebaf7de87f036b886",
-    "bytes": 594
+    "sha256": "e6a11cb0b9d43bbff0b45b83822e7525f9a07f8fd5311bbde62f0e9e577f13db",
+    "bytes": 605
   },
   "revision_20261029/results/india_site_deletion.csv": {
     "sha256": "e0b20ff39728c1ac3ab472ace7327b56da733519e9259782a7a41b6bea97c095",
@@ -320,8 +320,8 @@
     "bytes": 245
   },
   "revision_20261029/results/release_threshold.json": {
-    "sha256": "f45e113932c83f18c97a52080286a5a06788a8d3fd8087b0be106f587df53a46",
-    "bytes": 630
+    "sha256": "2e4033a39adc0a45ceaa10353c4d6aae7b97e4cba9f48affaf0b1c925125fc45",
+    "bytes": 626
   },
   "revision_20261029/results/ridge_coefficients.csv": {
     "sha256": "6a48578f9a425d1ad5e2da4083aa14b9e067a8621fa5875113815fc89900eb8e",
@@ -347,6 +347,10 @@
     "sha256": "32dc31ea6b55375025d2ab07a9691c1abeeecfb0ec69ec56ce852dbf0d48b74a",
     "bytes": 1236
   },
+  "revision_20261029/results/unlabelled_uk_scores.csv.gz": {
+    "sha256": "01e8fec2eff2ed2b661eede69e8324bb7ac84a5640373ae68251528850b9a4df",
+    "bytes": 10995
+  },
   "revision_20261029/results/within_pipeline.csv": {
     "sha256": "4bff797b8a93a9a9e30424af2dfc167823d8ec8124a9c17327d32174cc40c8f2",
     "bytes": 14101
@@ -360,24 +364,24 @@
     "bytes": 5811
   },
   "revision_20261029/src/revision_engine.py": {
-    "sha256": "2c3025d8227644cc21e9ad5ae17702f374e822f280fc5e654aad8009263a8d9d",
-    "bytes": 15766
+    "sha256": "6eeb20c22f808cfc72aab4ca6d09463d1f26db17356274c815680e2e45d2eddb",
+    "bytes": 16191
   },
   "revision_20261029/src/revision_figures.py": {
     "sha256": "6283a55b4ad9078da0c55f3440a4424e2d43fc7e26e0cd8be4f9af1994e00a5c",
     "bytes": 7133
   },
   "revision_20261029/src/revision_integrity.py": {
-    "sha256": "6868de094d3adf70b8dc114132917d18ab23cdc45cf353d3d978840af50873ac",
-    "bytes": 5833
+    "sha256": "7211b1211351802cfff5cffee5e9f6230c148e00646f70d929b8fda544eca94b",
+    "bytes": 6168
   },
   "revision_20261029/src/revision_legacy_diagnostics.py": {
     "sha256": "d50db8011cf25a7d97d63b7ad2e1bda3e9556e15ac2ca7b001912b359220b692",
     "bytes": 2087
   },
   "revision_20261029/src/revision_statistics.py": {
-    "sha256": "55330dcd77a3577499ebbaee99c610992638f54cad6b8de0efc9d3738116ab37",
-    "bytes": 13778
+    "sha256": "17dee374a74b3aff6081f740a5d49d380dd5dd8d2e37bd9dcc7a125d804d32c6",
+    "bytes": 13855
   },
   "revision_20261029/src/revision_uncertainty.py": {
     "sha256": "d80cfa9467cc68efd3722e4ffc22f1c8314587915f596d287ae39de15594b549",

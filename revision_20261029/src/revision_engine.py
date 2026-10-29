@@ -227,6 +227,13 @@ def run(mode='main',jobs=4):
     joblib.dump(est,REV/'results/models/noepa_refit.joblib',compress=3)
     save(pd.concat(external_parts,ignore_index=True),REV/'results/main_external_scores.csv.gz')
     save(train,REV/'data/uk_training_table.csv.gz');save(test,REV/'data/external_table.csv.gz')
+    # Demonstrate score-time operation for sensor windows without evaluable labels.
+    unlabelled=joblib.load(fullpath)
+    unlabelled=unlabelled[~unlabelled.evaluable].copy()
+    if not unlabelled.empty:
+        frozen=joblib.load(REV/'results/models/full.joblib')
+        unlabelled['score']=frozen.predict_proba(unlabelled[columns])[:,1]
+        save(unlabelled[META+['score']],REV/'results/unlabelled_uk_scores.csv.gz')
     # Core predictor invariance check with audit information held fixed.
     ext=daily[~daily.dataset.eq('QUANT')].copy();altered=ext.copy()
     dates=pd.to_datetime(windows[~windows.dataset.eq('QUANT')].evaluation_start)
