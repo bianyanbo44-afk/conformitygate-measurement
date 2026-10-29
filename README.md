@@ -1,7 +1,6 @@
-# ConformityGate: measurement-data product triage
+# ConformityGate: machine learning for sensor data quality ranking
 
-Code and numerical evidence for *Cross-geographic conformity ranking for
-low-cost PM2.5 data-product triage* (Measurement, MEAS-D-26-15622).
+Code and numerical evidence for *ConformityGate: Machine learning for cross-domain quality ranking of sensor data products* (Measurement, MEAS-D-26-15622).
 
 The revision separates sensor-only assessment features from paired-reference
 evaluation. It evaluates candidate ranking and matched deployment policies
