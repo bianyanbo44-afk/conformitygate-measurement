@@ -62,7 +62,8 @@ contains three site aggregates derived from seven physical PA-II units.
 7. Reproduction and diagnosis of the archived logistic score.
 8. Second-round analyses: rankings by measured assessment errors (an oracle
    reference point), a label without the R2 criterion, concentration-spread
-   strata, and a fully rebuilt run with U.S.-level daily completeness.
+   strata, and a fully rebuilt run with a 22-hour sensor-day completeness threshold
+   and common-feature checks.
 9. Figure export from saved results, with a portable panel-geometry check.
 
 The figure suite includes seven main figures and a supplementary six-panel
@@ -76,6 +77,40 @@ Cache files are reused for identical inputs. Use a fresh checkout if changing
 raw inputs or the analysis specification. No target label tunes a model,
 feature subset, threshold, or calibration parameter. The full primary score
 remains fixed even when an ablation performs better externally.
+
+## Interpreting deployment policies
+
+`B` is the number of prior-reference days per deployment. `q` is the fraction
+of deployments reviewed. These budgets describe different resources.
+
+The nomination-and-review policy first chooses the largest-score candidate
+in each deployment and then orders those nominated products by score. Its
+fixed-EPA comparator nominates the EPA product and uses unranked,
+tie-averaged review. At B=0, the U.S. precision gain of 27.06 percentage
+points at q=5% and q=10% belongs to this complete policy comparison.
+
+Scoring an unchanged fixed-EPA product pool is a distinct review policy.
+Its evidence is in the `epa_correction`, B=0 rows of
+`revision_20261029/results/within_pipeline.csv`. In the U.S. this gives
+AUROC 0.638 and precision 50.00%, 70.83%, and 59.57% at q=5%, 10%, and
+20%, respectively. The nomination-and-review gain must not be assigned to
+this fixed-pipeline policy. All-deployment conformity yield is evaluated
+separately from review precision in `deployment_policies.csv`.
+
+## Scope of the daily-processing sensitivity
+
+All calibration models fit and predict daily means; aggregation precedes
+calibration. The sensitivity applies a 22-of-24-hour sensor-day threshold
+to UK and Indian data as an approximate match to U.S. native-record
+completeness. U.S. daily values retain their released QC, and unavailable
+raw subdaily records prevent exact harmonization. The common-feature run
+also removes valid-hour and channel fields unavailable in the U.S.
+
+The rebuilt common-feature AUROC is 0.962 in the UK and 0.868 in the U.S.
+The Indian sensitivity retains eight evaluable blocks, AUROC 0.623
+(cluster-bootstrap interval 0.412-0.860). These results concern the tested
+completeness and feature settings, rather than every possible processing
+difference. Full results are in `revision_20261029/results/harmonized/`.
 
 ## Evidence
 

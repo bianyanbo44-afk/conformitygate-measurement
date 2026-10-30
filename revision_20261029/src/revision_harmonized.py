@@ -1,10 +1,11 @@
-"""Harmonized daily-processing transfer sensitivity (Reviewer 2, Comment 5).
+"""Daily-processing transfer sensitivity.
 
-UK and Indian sensor days use the U.S. completeness level (at least 22 of 24 hours,
-about 90%), so all three domains share one daily completeness rule. The common-feature
-score additionally drops valid-hour and channel fields unavailable in the U.S. Every
-upstream step is rebuilt under the same outer isolation, and the UK-trained estimators
-are frozen for external scoring. Primary results are not modified.
+UK and Indian sensor days use a 22-of-24-hour threshold as an approximate match
+to U.S. native-record completeness. U.S. daily data retain source QC; unavailable
+raw subdaily records prevent exact harmonization. The common-feature score drops
+valid-hour and channel fields unavailable in the U.S. Every upstream step is
+rebuilt under the same outer isolation, with UK-trained estimators frozen for
+external scoring. Primary results are not modified.
 """
 import os
 os.environ.setdefault('OMP_NUM_THREADS','1')
